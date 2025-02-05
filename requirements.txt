@@ -1,0 +1,8 @@
+python-telegram-bot
+speechrecognition
+pydub
+os
+datetime
+logging
+tempfile
+gtts
