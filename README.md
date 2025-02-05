@@ -9,19 +9,23 @@ This project is a Telegram bot that allows users to transcribe voice notes and g
 ## Requirements
 
 - Python 3.x
-- `python-telegram-bot` library
-- `pydub` for audio processing
 - `ffmpeg` for audio file conversions
 
 ## Setup Instructions
 
-### 1. Install Dependencies
+### Install Dependencies
 
 Make sure you have `ffmpeg` and Python dependencies installed:
 
 ```bash
 # Install ffmpeg
 sudo apt install ffmpeg
+```
+
+##Python Dependencies
+Make sure you have Python 3.x installed, then install the necessary Python libraries by running:
+```bash
+pip install -r requirements.txt
 ```
 
 ## Create a Telegram Bot with BotFather
