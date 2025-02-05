@@ -22,7 +22,7 @@ Make sure you have `ffmpeg` and Python dependencies installed:
 sudo apt install ffmpeg
 ```
 
-##Python Dependencies
+## Python Dependencies
 Make sure you have Python 3.x installed, then install the necessary Python libraries by running:
 ```bash
 pip install -r requirements.txt
