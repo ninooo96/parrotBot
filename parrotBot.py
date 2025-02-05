@@ -1,29 +1,7 @@
-import subprocess
 import sys
-
-# Function to install a package if it's not already present
-def install_package(package):
-    try:
-        # Try to import the package to see if it's already installed
-        __import__(package)
-    except ImportError:
-        # If not installed, install it via pip
-        print(f"{package} not found. Installing now...")
-        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-# List of dependencies
-dependencies = ["python-telegram-bot", "speechrecognition", "pydub", "os", "datetime", "logging", "tempfile", "gtts"]
-
-# Install the necessary dependencies
-for dependency in dependencies:
-    install_package(dependency)
-
-#import
 import logging
-
 from telegram import Update, Bot
 from html import escape
-
 import tempfile
 from telegram.constants import ParseMode
 from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandler, filters
